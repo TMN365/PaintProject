@@ -1,5 +1,5 @@
 ﻿
-namespace FirstGoodRepo
+namespace FullPaintProject
 {
     partial class Form1
     {

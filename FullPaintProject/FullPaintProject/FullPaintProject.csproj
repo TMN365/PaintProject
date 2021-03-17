@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F403B5E0-FA6B-4357-98BB-DCA0D11C6C2B}</ProjectGuid>
+    <ProjectGuid>{EB66DFE0-1868-4F87-8D42-15071A804288}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FirstGoodRepo</RootNamespace>
-    <AssemblyName>FirstGoodRepo</AssemblyName>
+    <RootNamespace>FullPaintProject</RootNamespace>
+    <AssemblyName>FullPaintProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

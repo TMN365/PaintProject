@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FirstGoodRepo")]
+[assembly: AssemblyTitle("FullPaintProject")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FirstGoodRepo")]
+[assembly: AssemblyProduct("FullPaintProject")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f403b5e0-fa6b-4357-98bb-dca0d11c6c2b")]
+[assembly: Guid("eb66dfe0-1868-4f87-8d42-15071a804288")]
 
 // Version information for an assembly consists of the following four values:
 //
