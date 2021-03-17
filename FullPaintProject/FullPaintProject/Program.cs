@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace FullPaintProject
 {
+    /// <summary>
+    //No, acuma intrebarea este, merge repo-ul?
+    /// </summary>
     static class Program
     {
         /// <summary>
@@ -17,6 +20,7 @@ namespace FullPaintProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
         }
     }
 }
