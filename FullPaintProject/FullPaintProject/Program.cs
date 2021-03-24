@@ -14,7 +14,7 @@ namespace FullPaintProject
     /// //Test Nicu 2
     /// Nicu o modificat Aici
     /// Lau o modificat aci
-    /// miau aasda
+    /// miau aasda test
     static class Program
     {
         /// <summary>
