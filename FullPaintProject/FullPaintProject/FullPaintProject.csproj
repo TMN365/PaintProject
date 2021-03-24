@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DevAndrei\TestEcran.cs" />
+    <Compile Include="DevLau\FormLau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevLau\FormLau.Designer.cs">
+      <DependentUpon>FormLau.cs</DependentUpon>
+    </Compile>
     <Compile Include="DevOla\Class1.cs" />
     <Compile Include="DevOla\FormOla.cs">
       <SubType>Form</SubType>
