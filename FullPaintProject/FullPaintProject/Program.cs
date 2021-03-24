@@ -11,6 +11,7 @@ namespace FullPaintProject
     // Dar acuma?
     /// </summary>
     /// //Test Nicu
+    /// //Test Nicu 2
     static class Program
     {
         /// <summary>
