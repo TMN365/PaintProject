@@ -10,6 +10,7 @@ namespace FullPaintProject
     //No, acuma intrebarea este, merge repo-ul?
     // Dar acuma?
     /// </summary>
+    /// //Test Nicu
     static class Program
     {
         /// <summary>

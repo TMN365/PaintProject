@@ -1,0 +1,9 @@
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.exe.config
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.exe
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.pdb
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csprojAssemblyReference.cache
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.Properties.Resources.resources
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csproj.GenerateResource.cache
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csproj.CoreCompileInputs.cache
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.exe
+D:\Faculta\UTCN\An3Sem2\II\ProiectPaint\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.pdb
