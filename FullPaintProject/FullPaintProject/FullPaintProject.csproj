@@ -53,13 +53,6 @@
     <Compile Include="DevLau\FormLau.Designer.cs">
       <DependentUpon>FormLau.cs</DependentUpon>
     </Compile>
-    <Compile Include="DevOla\Class1.cs" />
-    <Compile Include="DevOla\FormOla.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DevOla\FormOla.Designer.cs">
-      <DependentUpon>FormOla.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
