@@ -34,5 +34,10 @@ namespace FullPaintProject
             if (emailTextBox.Text == "E-mail adress")
                 emailTextBox.Text = "";
         }
+
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
+            // aici verificam datele daca sunt valide si deschidem form pentru codul primit prin mail
+        }
     }
 }
