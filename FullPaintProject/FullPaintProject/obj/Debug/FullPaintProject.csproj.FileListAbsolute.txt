@@ -13,3 +13,14 @@ E:\an3\Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPain
 E:\an3\Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csproj.CoreCompileInputs.cache
 E:\an3\Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.exe
 E:\an3\Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.pdb
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csprojAssemblyReference.cache
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.Properties.Resources.resources
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csproj.GenerateResource.cache
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csproj.CoreCompileInputs.cache
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.exe
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.pdb
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.exe.config
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.exe
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.pdb
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.loginForm.resources
+C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Dumnezei\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.RegisterForm.resources

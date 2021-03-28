@@ -17,10 +17,11 @@ public class TestEcran
 
     }
 
-    public ShowString()
-    {
-        Console.WriteLine(sir);
-    }
+    //public ShowString()
+    //{
+    //    Console.WriteLine(sir);
+
+    //}
 
 
 }

@@ -23,15 +23,9 @@ namespace FullPaintProject
         [STAThread]
         static void Main()
         {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-
-            TestEcran ecran = new TestEcran();
-            ecran.ShowString;
-            
-
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new LoginForm());
         }
     }
 }
