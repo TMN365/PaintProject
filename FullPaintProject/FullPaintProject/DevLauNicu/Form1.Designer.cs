@@ -1,5 +1,5 @@
 ﻿
-namespace practice_paint
+namespace FullPaintProject
 {
     partial class Form1
     {
@@ -31,8 +31,16 @@ namespace practice_paint
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Menu = new System.Windows.Forms.Panel();
+            this.colorsbutton = new System.Windows.Forms.Button();
             this.ShapesLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cercplinButton = new System.Windows.Forms.RadioButton();
+            this.dreptunghiplinButton = new System.Windows.Forms.RadioButton();
+            this.creionButton = new System.Windows.Forms.RadioButton();
+            this.radieraButton = new System.Windows.Forms.RadioButton();
+            this.linieButton = new System.Windows.Forms.RadioButton();
+            this.cercbutton = new System.Windows.Forms.RadioButton();
+            this.dreptunghiButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HelpBtn = new System.Windows.Forms.Button();
             this.UndoBtn = new System.Windows.Forms.Button();
@@ -41,15 +49,7 @@ namespace practice_paint
             this.LogoutLabel = new System.Windows.Forms.Label();
             this.LogoutBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.dreptunghiButton1 = new System.Windows.Forms.RadioButton();
-            this.cercbutton = new System.Windows.Forms.RadioButton();
-            this.linieButton = new System.Windows.Forms.RadioButton();
-            this.dreptunghiplinButton = new System.Windows.Forms.RadioButton();
-            this.cercplinButton = new System.Windows.Forms.RadioButton();
-            this.creionButton = new System.Windows.Forms.RadioButton();
-            this.radieraButton = new System.Windows.Forms.RadioButton();
-            this.colors_button = new System.Windows.Forms.Button();
-            this.selectwidth_textBox = new System.Windows.Forms.TextBox();
+            this.grosimetext = new System.Windows.Forms.TextBox();
             this.Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,10 +58,8 @@ namespace practice_paint
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.Color.Aquamarine;
-            this.Menu.Controls.Add(this.selectwidth_textBox);
-            this.Menu.Controls.Add(this.colors_button);
-            this.Menu.Controls.Add(this.radieraButton);
-            this.Menu.Controls.Add(this.creionButton);
+            this.Menu.Controls.Add(this.grosimetext);
+            this.Menu.Controls.Add(this.colorsbutton);
             this.Menu.Controls.Add(this.ShapesLabel);
             this.Menu.Controls.Add(this.panel1);
             this.Menu.Controls.Add(this.pictureBox1);
@@ -73,10 +71,20 @@ namespace practice_paint
             this.Menu.Controls.Add(this.LogoutBtn);
             this.Menu.Controls.Add(this.SaveBtn);
             this.Menu.Location = new System.Drawing.Point(0, 0);
-            this.Menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Menu.Margin = new System.Windows.Forms.Padding(2);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(863, 115);
             this.Menu.TabIndex = 0;
+            // 
+            // colorsbutton
+            // 
+            this.colorsbutton.Location = new System.Drawing.Point(604, 37);
+            this.colorsbutton.Name = "colorsbutton";
+            this.colorsbutton.Size = new System.Drawing.Size(75, 23);
+            this.colorsbutton.TabIndex = 1;
+            this.colorsbutton.Text = "button1";
+            this.colorsbutton.UseVisualStyleBackColor = true;
+            this.colorsbutton.Click += new System.EventHandler(this.colorsbutton_Click);
             // 
             // ShapesLabel
             // 
@@ -93,27 +101,105 @@ namespace practice_paint
             // 
             this.panel1.Controls.Add(this.cercplinButton);
             this.panel1.Controls.Add(this.dreptunghiplinButton);
+            this.panel1.Controls.Add(this.creionButton);
+            this.panel1.Controls.Add(this.radieraButton);
             this.panel1.Controls.Add(this.linieButton);
             this.panel1.Controls.Add(this.cercbutton);
             this.panel1.Controls.Add(this.dreptunghiButton1);
             this.panel1.Location = new System.Drawing.Point(211, 9);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(232, 81);
+            this.panel1.Size = new System.Drawing.Size(348, 81);
             this.panel1.TabIndex = 8;
+            // 
+            // cercplinButton
+            // 
+            this.cercplinButton.AutoSize = true;
+            this.cercplinButton.Location = new System.Drawing.Point(117, 43);
+            this.cercplinButton.Name = "cercplinButton";
+            this.cercplinButton.Size = new System.Drawing.Size(62, 17);
+            this.cercplinButton.TabIndex = 4;
+            this.cercplinButton.TabStop = true;
+            this.cercplinButton.Text = "cercplin";
+            this.cercplinButton.UseVisualStyleBackColor = true;
+            // 
+            // dreptunghiplinButton
+            // 
+            this.dreptunghiplinButton.AutoSize = true;
+            this.dreptunghiplinButton.Location = new System.Drawing.Point(117, 20);
+            this.dreptunghiplinButton.Name = "dreptunghiplinButton";
+            this.dreptunghiplinButton.Size = new System.Drawing.Size(91, 17);
+            this.dreptunghiplinButton.TabIndex = 3;
+            this.dreptunghiplinButton.TabStop = true;
+            this.dreptunghiplinButton.Text = "dreptunghiplin";
+            this.dreptunghiplinButton.UseVisualStyleBackColor = true;
+            // 
+            // creionButton
+            // 
+            this.creionButton.AutoSize = true;
+            this.creionButton.Location = new System.Drawing.Point(251, 17);
+            this.creionButton.Name = "creionButton";
+            this.creionButton.Size = new System.Drawing.Size(54, 17);
+            this.creionButton.TabIndex = 10;
+            this.creionButton.TabStop = true;
+            this.creionButton.Text = "creion";
+            this.creionButton.UseVisualStyleBackColor = true;
+            // 
+            // radieraButton
+            // 
+            this.radieraButton.AutoSize = true;
+            this.radieraButton.Location = new System.Drawing.Point(248, 52);
+            this.radieraButton.Name = "radieraButton";
+            this.radieraButton.Size = new System.Drawing.Size(57, 17);
+            this.radieraButton.TabIndex = 11;
+            this.radieraButton.TabStop = true;
+            this.radieraButton.Text = "radiera";
+            this.radieraButton.UseVisualStyleBackColor = true;
+            // 
+            // linieButton
+            // 
+            this.linieButton.AutoSize = true;
+            this.linieButton.Location = new System.Drawing.Point(4, 52);
+            this.linieButton.Name = "linieButton";
+            this.linieButton.Size = new System.Drawing.Size(43, 17);
+            this.linieButton.TabIndex = 2;
+            this.linieButton.TabStop = true;
+            this.linieButton.Text = "linie";
+            this.linieButton.UseVisualStyleBackColor = true;
+            // 
+            // cercbutton
+            // 
+            this.cercbutton.AutoSize = true;
+            this.cercbutton.Location = new System.Drawing.Point(4, 28);
+            this.cercbutton.Name = "cercbutton";
+            this.cercbutton.Size = new System.Drawing.Size(46, 17);
+            this.cercbutton.TabIndex = 1;
+            this.cercbutton.TabStop = true;
+            this.cercbutton.Text = "cerc";
+            this.cercbutton.UseVisualStyleBackColor = true;
+            // 
+            // dreptunghiButton1
+            // 
+            this.dreptunghiButton1.AutoSize = true;
+            this.dreptunghiButton1.Location = new System.Drawing.Point(4, 4);
+            this.dreptunghiButton1.Name = "dreptunghiButton1";
+            this.dreptunghiButton1.Size = new System.Drawing.Size(75, 17);
+            this.dreptunghiButton1.TabIndex = 0;
+            this.dreptunghiButton1.TabStop = true;
+            this.dreptunghiButton1.Text = "dreptunghi";
+            this.dreptunghiButton1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-          
             // 
             // HelpBtn
             // 
@@ -123,7 +209,7 @@ namespace practice_paint
             this.HelpBtn.Image = ((System.Drawing.Image)(resources.GetObject("HelpBtn.Image")));
             this.HelpBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.HelpBtn.Location = new System.Drawing.Point(111, 71);
-            this.HelpBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HelpBtn.Margin = new System.Windows.Forms.Padding(2);
             this.HelpBtn.Name = "HelpBtn";
             this.HelpBtn.Size = new System.Drawing.Size(86, 32);
             this.HelpBtn.TabIndex = 7;
@@ -140,7 +226,7 @@ namespace practice_paint
             this.UndoBtn.Image = ((System.Drawing.Image)(resources.GetObject("UndoBtn.Image")));
             this.UndoBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.UndoBtn.Location = new System.Drawing.Point(111, 36);
-            this.UndoBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UndoBtn.Margin = new System.Windows.Forms.Padding(2);
             this.UndoBtn.Name = "UndoBtn";
             this.UndoBtn.Size = new System.Drawing.Size(86, 38);
             this.UndoBtn.TabIndex = 6;
@@ -172,7 +258,7 @@ namespace practice_paint
             this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseBtn.Font = new System.Drawing.Font("Wide Latin", 9F, System.Drawing.FontStyle.Bold);
             this.CloseBtn.Location = new System.Drawing.Point(792, 0);
-            this.CloseBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CloseBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(71, 27);
             this.CloseBtn.TabIndex = 5;
@@ -190,7 +276,6 @@ namespace practice_paint
             this.LogoutLabel.Size = new System.Drawing.Size(77, 23);
             this.LogoutLabel.TabIndex = 4;
             this.LogoutLabel.Text = "Logout";
-         
             // 
             // LogoutBtn
             // 
@@ -198,7 +283,7 @@ namespace practice_paint
             this.LogoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("LogoutBtn.Image")));
             this.LogoutBtn.Location = new System.Drawing.Point(766, 31);
-            this.LogoutBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogoutBtn.Margin = new System.Windows.Forms.Padding(2);
             this.LogoutBtn.Name = "LogoutBtn";
             this.LogoutBtn.Size = new System.Drawing.Size(60, 59);
             this.LogoutBtn.TabIndex = 3;
@@ -213,7 +298,7 @@ namespace practice_paint
             this.SaveBtn.Image = ((System.Drawing.Image)(resources.GetObject("SaveBtn.Image")));
             this.SaveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SaveBtn.Location = new System.Drawing.Point(111, 2);
-            this.SaveBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(86, 36);
             this.SaveBtn.TabIndex = 2;
@@ -222,110 +307,29 @@ namespace practice_paint
             this.SaveBtn.UseVisualStyleBackColor = true;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // dreptunghiButton1
+            // grosimetext
             // 
-            this.dreptunghiButton1.AutoSize = true;
-            this.dreptunghiButton1.Location = new System.Drawing.Point(4, 4);
-            this.dreptunghiButton1.Name = "dreptunghiButton1";
-            this.dreptunghiButton1.Size = new System.Drawing.Size(75, 17);
-            this.dreptunghiButton1.TabIndex = 0;
-            this.dreptunghiButton1.TabStop = true;
-            this.dreptunghiButton1.Text = "dreptunghi";
-            this.dreptunghiButton1.UseVisualStyleBackColor = true;
-            // 
-            // cercbutton
-            // 
-            this.cercbutton.AutoSize = true;
-            this.cercbutton.Location = new System.Drawing.Point(4, 28);
-            this.cercbutton.Name = "cercbutton";
-            this.cercbutton.Size = new System.Drawing.Size(46, 17);
-            this.cercbutton.TabIndex = 1;
-            this.cercbutton.TabStop = true;
-            this.cercbutton.Text = "cerc";
-            this.cercbutton.UseVisualStyleBackColor = true;
-            // 
-            // linieButton
-            // 
-            this.linieButton.AutoSize = true;
-            this.linieButton.Location = new System.Drawing.Point(4, 52);
-            this.linieButton.Name = "linieButton";
-            this.linieButton.Size = new System.Drawing.Size(43, 17);
-            this.linieButton.TabIndex = 2;
-            this.linieButton.TabStop = true;
-            this.linieButton.Text = "linie";
-            this.linieButton.UseVisualStyleBackColor = true;
-            // 
-            // dreptunghiplinButton
-            // 
-            this.dreptunghiplinButton.AutoSize = true;
-            this.dreptunghiplinButton.Location = new System.Drawing.Point(117, 20);
-            this.dreptunghiplinButton.Name = "dreptunghiplinButton";
-            this.dreptunghiplinButton.Size = new System.Drawing.Size(91, 17);
-            this.dreptunghiplinButton.TabIndex = 3;
-            this.dreptunghiplinButton.TabStop = true;
-            this.dreptunghiplinButton.Text = "dreptunghiplin";
-            this.dreptunghiplinButton.UseVisualStyleBackColor = true;
-            // 
-            // cercplinButton
-            // 
-            this.cercplinButton.AutoSize = true;
-            this.cercplinButton.Location = new System.Drawing.Point(117, 43);
-            this.cercplinButton.Name = "cercplinButton";
-            this.cercplinButton.Size = new System.Drawing.Size(62, 17);
-            this.cercplinButton.TabIndex = 4;
-            this.cercplinButton.TabStop = true;
-            this.cercplinButton.Text = "cercplin";
-            this.cercplinButton.UseVisualStyleBackColor = true;
-            // 
-            // creionButton
-            // 
-            this.creionButton.AutoSize = true;
-            this.creionButton.Location = new System.Drawing.Point(484, 29);
-            this.creionButton.Name = "creionButton";
-            this.creionButton.Size = new System.Drawing.Size(54, 17);
-            this.creionButton.TabIndex = 10;
-            this.creionButton.TabStop = true;
-            this.creionButton.Text = "creion";
-            this.creionButton.UseVisualStyleBackColor = true;
-            // 
-            // radieraButton
-            // 
-            this.radieraButton.AutoSize = true;
-            this.radieraButton.Location = new System.Drawing.Point(484, 57);
-            this.radieraButton.Name = "radieraButton";
-            this.radieraButton.Size = new System.Drawing.Size(57, 17);
-            this.radieraButton.TabIndex = 11;
-            this.radieraButton.TabStop = true;
-            this.radieraButton.Text = "radiera";
-            this.radieraButton.UseVisualStyleBackColor = true;
-            // 
-            // colors_button
-            // 
-            this.colors_button.Location = new System.Drawing.Point(601, 26);
-            this.colors_button.Name = "colors_button";
-            this.colors_button.Size = new System.Drawing.Size(75, 23);
-            this.colors_button.TabIndex = 12;
-            this.colors_button.Text = "culori";
-            this.colors_button.UseVisualStyleBackColor = true;
-            // 
-            // selectwidth_textBox
-            // 
-            this.selectwidth_textBox.Location = new System.Drawing.Point(589, 75);
-            this.selectwidth_textBox.Name = "selectwidth_textBox";
-            this.selectwidth_textBox.Size = new System.Drawing.Size(100, 20);
-            this.selectwidth_textBox.TabIndex = 13;
+            this.grosimetext.Location = new System.Drawing.Point(614, 82);
+            this.grosimetext.Name = "grosimetext";
+            this.grosimetext.Size = new System.Drawing.Size(100, 20);
+            this.grosimetext.TabIndex = 10;
+            this.grosimetext.TextChanged += new System.EventHandler(this.grosimetext_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(863, 386);
             this.Controls.Add(this.Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -355,8 +359,8 @@ namespace practice_paint
         private System.Windows.Forms.RadioButton linieButton;
         private System.Windows.Forms.RadioButton cercbutton;
         private System.Windows.Forms.RadioButton dreptunghiButton1;
-        private System.Windows.Forms.TextBox selectwidth_textBox;
-        private System.Windows.Forms.Button colors_button;
+        private System.Windows.Forms.Button colorsbutton;
+        private System.Windows.Forms.TextBox grosimetext;
     }
 }
 

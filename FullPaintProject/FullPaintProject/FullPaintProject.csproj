@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -51,6 +51,8 @@
     <Reference Include="System">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -108,6 +110,10 @@
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\FullPaintProject.loginForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FullPaintProject.MainMenuForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FullPaintProject.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\FullPaintProject.RegisterForm.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -121,11 +127,19 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include=".idea\FullPaintProject.iml" />
     <None Include=".vs\ProjectSettings.json" />
     <None Include=".vs\slnx.sqlite" />
     <None Include=".vs\VSWorkspaceState.json" />
     <None Include="bin\Debug\FullPaintProject.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\FullPaintProject.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\FullPaintProject.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\FullPaintProject.csprojAssemblyReference.cache" />
     <None Include="obj\Release\FullPaintProject.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -145,6 +159,13 @@
     <Content Include=".idea\misc.xml" />
     <Content Include=".idea\modules.xml" />
     <Content Include=".idea\vcs.xml" />
+    <Content Include="bin\Debug\Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\FullPaintProject.exe" />
     <Content Include="bin\Debug\FullPaintProject.pdb" />
     <Content Include="Database1.mdf">
@@ -157,6 +178,11 @@
     <Content Include="help.png" />
     <Content Include="logout-1-110657.png" />
     <Content Include="Microsoft-Paint-icon-big-256.png" />
+    <Content Include="obj\Debug\FullPaintProject.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\FullPaintProject.exe" />
+    <Content Include="obj\Debug\FullPaintProject.pdb" />
+    <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <Content Include="save icon.png" />
     <Content Include="undo.png" />
     <None Include="Resources\help_img.png" />

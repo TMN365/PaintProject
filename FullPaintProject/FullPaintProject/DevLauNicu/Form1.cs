@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 
-namespace practice_paint
+
+namespace FullPaintProject
 {
     public partial class Form1 : Form
     {
@@ -39,15 +40,14 @@ namespace practice_paint
                 x = e.X;
                 y = e.Y;
             }
-
         }
 
         Pen p = new Pen(Color.Black);
         public Form1()
         {
             InitializeComponent();
-            selectwidth_textBox.Text = Convert.ToString(5);
-
+           grosimetext.Text= Convert.ToString(5);
+          
         }
 
         #region Logout+Close
@@ -81,17 +81,16 @@ namespace practice_paint
         #endregion
 
         // Meniu CUlori
-        private void button1_Click(object sender, EventArgs e)
+        private void colorsbutton_Click(object sender, EventArgs e)
         {
             colorDialog.ShowDialog();
-            colors_button.BackColor = colorDialog.Color;
+            colorsbutton.BackColor = colorDialog.Color;
             p.Color = colorDialog.Color;
-
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void grosimetext_TextChanged(object sender, EventArgs e)
         {
-            grosime = Convert.ToInt32(selectwidth_textBox.Text);
+            grosime = Convert.ToInt32(grosimetext.Text);
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
@@ -100,12 +99,11 @@ namespace practice_paint
             y = e.Y;
             miscare = true;
             p.Width = grosime;
-
         }
-        bool miscare = true;
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
+            bool miscare = true;
+        
+            private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-
             miscare = false;
             xnou = e.X;
             ynou = e.Y;
@@ -129,9 +127,7 @@ namespace practice_paint
 
                 Point P1 = new Point(x, y);
                 Point P2 = new Point(xnou, ynou);
-
                 g.DrawLine(p, P1, P2);
-
             }
             if (dreptunghiplinButton.Checked)
             {
@@ -143,8 +139,10 @@ namespace practice_paint
             {
                 g.FillEllipse(new SolidBrush(colorDialog.Color), r);
             }
-
         }
+
+       
+       
     }
 
 
