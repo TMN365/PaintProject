@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FullPaintProject.DevLauNicu;
 namespace FullPaintProject
 {
     /// <summary>
@@ -25,7 +24,7 @@ namespace FullPaintProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPaint());
+            Application.Run(new Form1());
         }
     }
 }
