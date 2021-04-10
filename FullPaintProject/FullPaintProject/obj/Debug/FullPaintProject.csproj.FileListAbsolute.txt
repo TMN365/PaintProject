@@ -39,3 +39,18 @@ C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\F
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.exe
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.pdb
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\obj\Debug\practice_paint.Form1.resources
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\practice_paint.Form1.resources
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.LoginForm.resources
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.MainMenuForm.resources
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.Properties.Resources.resources
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.RegisterForm.resources
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csproj.GenerateResource.cache
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.exe
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.pdb
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\bin\Debug\Database1.mdf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\bin\Debug\Database1_log.ldf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.exe.config
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.exe
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\bin\Debug\FullPaintProject.pdb

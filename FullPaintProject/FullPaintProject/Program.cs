@@ -1,9 +1,10 @@
-﻿using System;
+﻿//using FullPaintProject.DevOla;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using FullPaintProject.DevLauNicu;
+using FullPaintProject.DevLauNicu;
 namespace FullPaintProject
 {
     /// <summary>
@@ -25,7 +26,8 @@ namespace FullPaintProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+           // Application.Run(new LoginForm());
+            Application.Run(new Form1());
         }
     }
 }

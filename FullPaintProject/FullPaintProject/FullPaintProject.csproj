@@ -154,6 +154,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="help.png" />
+    <Content Include="logout-1-110657.png" />
+    <Content Include="Microsoft-Paint-icon-big-256.png" />
+    <Content Include="save icon.png" />
+    <Content Include="undo.png" />
     <None Include="Resources\help_img.png" />
     <None Include="Resources\help.png" />
     <None Include="Resources\logout-1-110657.png" />
