@@ -44,8 +44,7 @@ namespace practice_paint
 
         private void HelpBtn_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
+            
         }
         #endregion
 
