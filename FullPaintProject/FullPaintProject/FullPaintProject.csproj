@@ -64,12 +64,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DevAndrei\TestEcran.cs" />
+    <Compile Include="DevLauNicu\FormPaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevLauNicu\FormPaint.Designer.cs">
+      <DependentUpon>FormPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevOla\Class1.cs" />
+    <Compile Include="DevOla\FormOla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevOla\FormOla.Designer.cs">
+      <DependentUpon>FormOla.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenuForm.Designer.cs">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +117,12 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".idea\FullPaintProject.iml" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\FullPaintProject.exe.config" />
+    <None Include="obj\Release\FullPaintProject.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,6 +137,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".idea\.gitignore" />
+    <Content Include=".idea\misc.xml" />
+    <Content Include=".idea\modules.xml" />
+    <Content Include=".idea\vcs.xml" />
+    <Content Include="bin\Debug\FullPaintProject.exe" />
+    <Content Include="bin\Debug\FullPaintProject.pdb" />
     <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -123,6 +150,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="SQL\dbo.RegisterTable.sql" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -135,6 +163,10 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\FullPaintProject\v16\" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
