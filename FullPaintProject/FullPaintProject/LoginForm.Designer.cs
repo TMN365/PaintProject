@@ -29,40 +29,37 @@ namespace FullPaintProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.registerButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // usernameTextBox
+            // textBoxUsername
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(440, 171);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(132, 22);
-            this.usernameTextBox.TabIndex = 0;
-            this.usernameTextBox.Text = "Username";
-            this.usernameTextBox.Click += new System.EventHandler(this.usernameTextBox_Click);
+            this.textBoxUsername.Location = new System.Drawing.Point(330, 139);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(100, 20);
+            this.textBoxUsername.TabIndex = 0;
+            this.textBoxUsername.Text = "Username";
+            this.textBoxUsername.Click += new System.EventHandler(this.usernameTextBox_Click);
             // 
-            // passwordTextBox
+            // textBoxPassword
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(440, 234);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(132, 22);
-            this.passwordTextBox.TabIndex = 1;
-            this.passwordTextBox.Text = "Password";
-            this.passwordTextBox.Click += new System.EventHandler(this.passwordTextBox_Click);
+            this.textBoxPassword.Location = new System.Drawing.Point(330, 190);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.Text = "Password";
+            this.textBoxPassword.Click += new System.EventHandler(this.passwordTextBox_Click);
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(440, 318);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Location = new System.Drawing.Point(330, 258);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(133, 28);
+            this.loginButton.Size = new System.Drawing.Size(100, 23);
             this.loginButton.TabIndex = 2;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -70,10 +67,9 @@ namespace FullPaintProject
             // 
             // registerButton
             // 
-            this.registerButton.Location = new System.Drawing.Point(593, 415);
-            this.registerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registerButton.Location = new System.Drawing.Point(445, 337);
             this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(100, 28);
+            this.registerButton.Size = new System.Drawing.Size(75, 23);
             this.registerButton.TabIndex = 3;
             this.registerButton.Text = "Register now";
             this.registerButton.UseVisualStyleBackColor = true;
@@ -81,35 +77,32 @@ namespace FullPaintProject
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(343, 421);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(257, 342);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 28);
+            this.label1.Size = new System.Drawing.Size(134, 23);
             this.label1.TabIndex = 4;
             this.label1.Text = "You have no account yet?";
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Location = new System.Drawing.Point(415, 36);
-            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.titleLabel.Location = new System.Drawing.Point(311, 29);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(201, 17);
+            this.titleLabel.Size = new System.Drawing.Size(152, 13);
             this.titleLabel.TabIndex = 5;
             this.titleLabel.Text = "Bine ati venit pe aplicatia Paint";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.loginButton);
-            this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.usernameTextBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUsername);
             this.Name = "LoginForm";
             this.Text = "Login";
             this.ResumeLayout(false);
@@ -119,8 +112,8 @@ namespace FullPaintProject
 
         #endregion
 
-        private System.Windows.Forms.TextBox usernameTextBox;
-        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.Label label1;

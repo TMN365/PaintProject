@@ -29,42 +29,44 @@ namespace FullPaintProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.confirmButton = new System.Windows.Forms.Button();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // usernameTextBox
+            // textBoxUsername
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(306, 83);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(181, 20);
-            this.usernameTextBox.TabIndex = 0;
-            this.usernameTextBox.Text = "Username";
-            this.usernameTextBox.Click += new System.EventHandler(this.usernameTextBox_Click);
+            this.textBoxUsername.Location = new System.Drawing.Point(306, 238);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(181, 20);
+            this.textBoxUsername.TabIndex = 0;
+            this.textBoxUsername.Text = "Username";
+            this.textBoxUsername.Click += new System.EventHandler(this.usernameTextBox_Click);
             // 
-            // passwordTextBox
+            // textBoxPassword
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(306, 109);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(181, 20);
-            this.passwordTextBox.TabIndex = 1;
-            this.passwordTextBox.Text = "Password";
-            this.passwordTextBox.Click += new System.EventHandler(this.passwordTextBox_Click);
+            this.textBoxPassword.Location = new System.Drawing.Point(306, 264);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(181, 20);
+            this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.Text = "Password";
+            this.textBoxPassword.Click += new System.EventHandler(this.passwordTextBox_Click);
             // 
-            // emailTextBox
+            // textBoxEmail
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(306, 135);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(181, 20);
-            this.emailTextBox.TabIndex = 2;
-            this.emailTextBox.Text = "E-mail adress";
-            this.emailTextBox.Click += new System.EventHandler(this.emailTextBox_Click);
+            this.textBoxEmail.Location = new System.Drawing.Point(306, 134);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(181, 20);
+            this.textBoxEmail.TabIndex = 2;
+            this.textBoxEmail.Text = "E-mail adress";
+            this.textBoxEmail.Click += new System.EventHandler(this.emailTextBox_Click);
             // 
             // confirmButton
             // 
-            this.confirmButton.Location = new System.Drawing.Point(347, 195);
+            this.confirmButton.Location = new System.Drawing.Point(349, 331);
             this.confirmButton.Name = "confirmButton";
             this.confirmButton.Size = new System.Drawing.Size(75, 23);
             this.confirmButton.TabIndex = 3;
@@ -72,15 +74,35 @@ namespace FullPaintProject
             this.confirmButton.UseVisualStyleBackColor = true;
             this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
             // 
+            // textBoxFirstName
+            // 
+            this.textBoxFirstName.Location = new System.Drawing.Point(306, 55);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(181, 20);
+            this.textBoxFirstName.TabIndex = 4;
+            this.textBoxFirstName.Text = "First Name";
+            this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBoxFirstName_TextChanged);
+            // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Location = new System.Drawing.Point(306, 94);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(181, 20);
+            this.textBoxLastName.TabIndex = 5;
+            this.textBoxLastName.Text = "Last Name";
+            this.textBoxLastName.TextChanged += new System.EventHandler(this.textBoxLastName_TextChanged);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxLastName);
+            this.Controls.Add(this.textBoxFirstName);
             this.Controls.Add(this.confirmButton);
-            this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.usernameTextBox);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUsername);
             this.Name = "RegisterForm";
             this.Text = "Register";
             this.ResumeLayout(false);
@@ -90,9 +112,11 @@ namespace FullPaintProject
 
         #endregion
 
-        private System.Windows.Forms.TextBox usernameTextBox;
-        private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Button confirmButton;
+        private System.Windows.Forms.TextBox textBoxFirstName;
+        private System.Windows.Forms.TextBox textBoxLastName;
     }
 }
