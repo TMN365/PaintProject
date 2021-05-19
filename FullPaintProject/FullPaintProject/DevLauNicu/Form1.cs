@@ -93,6 +93,8 @@ namespace FullPaintProject
             grosime = Convert.ToInt32(grosimetext.Text);
         }
 
+     
+
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             x = e.X;
