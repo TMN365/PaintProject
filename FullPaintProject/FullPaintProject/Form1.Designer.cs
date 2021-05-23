@@ -370,27 +370,27 @@ namespace FullPaintProject
 
         #endregion
 
-        private System.Windows.Forms.Panel Menu;
-        private System.Windows.Forms.Label HelloUserLabel;
-        private System.Windows.Forms.Button SaveBtn;
-        private System.Windows.Forms.Button LogoutBtn;
-        private System.Windows.Forms.Label LogoutLabel;
-        private System.Windows.Forms.Button CloseBtn;
-        private System.Windows.Forms.Button HelpBtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label ShapesLabel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radieraButton;
-        private System.Windows.Forms.RadioButton creionButton;
-        private System.Windows.Forms.RadioButton cercplinButton;
-        private System.Windows.Forms.RadioButton dreptunghiplinButton;
-        private System.Windows.Forms.RadioButton linieButton;
-        private System.Windows.Forms.RadioButton cercbutton;
-        private System.Windows.Forms.RadioButton dreptunghiButton1;
-        private System.Windows.Forms.Button colorsbutton;
-        private System.Windows.Forms.TextBox grosimetext;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Panel Menu;
+        public System.Windows.Forms.Label HelloUserLabel;
+        public System.Windows.Forms.Button SaveBtn;
+        public System.Windows.Forms.Button LogoutBtn;
+        public System.Windows.Forms.Label LogoutLabel;
+        public System.Windows.Forms.Button CloseBtn;
+        public System.Windows.Forms.Button HelpBtn;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label ShapesLabel;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.RadioButton radieraButton;
+        public System.Windows.Forms.RadioButton creionButton;
+        public System.Windows.Forms.RadioButton cercplinButton;
+        public System.Windows.Forms.RadioButton dreptunghiplinButton;
+        public System.Windows.Forms.RadioButton linieButton;
+        public System.Windows.Forms.RadioButton cercbutton;
+        public System.Windows.Forms.RadioButton dreptunghiButton1;
+        public System.Windows.Forms.Button colorsbutton;
+        public System.Windows.Forms.TextBox grosimetext;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
     }
 }
 

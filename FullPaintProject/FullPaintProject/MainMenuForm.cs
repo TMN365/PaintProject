@@ -14,7 +14,7 @@ namespace FullPaintProject
 {
     public partial class MainMenuForm : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Faculta\UTCN\An3Sem2\II\PaintProject22.05\PaintProject\FullPaintProject\FullPaintProject\PaintDataBase.mdf;Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\PaintDataBase.mdf';Integrated Security=True";
         string username;
         string password;
         string path;
@@ -42,7 +42,7 @@ namespace FullPaintProject
         public void editDataButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EditAccountFrom editAccountFrom = new EditAccountFrom(username, password);
+            EditAccountForm editAccountFrom = new EditAccountForm(username, password);
             editAccountFrom.ShowDialog();
             this.Close();
 

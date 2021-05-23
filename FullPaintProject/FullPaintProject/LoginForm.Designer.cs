@@ -157,15 +157,15 @@ namespace FullPaintProject
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxUsername;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.Button registerButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox textBoxUsername;
+        public System.Windows.Forms.TextBox textBoxPassword;
+        public System.Windows.Forms.Button loginButton;
+        public System.Windows.Forms.Button registerButton;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label titleLabel;
+        public System.Windows.Forms.Button exitButton;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
     }
 }
 

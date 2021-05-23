@@ -13,31 +13,28 @@ namespace FullPaintProject
 {
     public partial class RegisterForm : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Faculta\UTCN\An3Sem2\II\PaintProject22.05\PaintProject\FullPaintProject\FullPaintProject\PaintDataBase.mdf;Integrated Security=True";
+        string checkString;
+
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\PaintDataBase.mdf';Integrated Security=True";
         public RegisterForm()
         {
             InitializeComponent();
         }
 
-        private void usernameTextBox_Click(object sender, EventArgs e)
+        public void usernameTextBox_Click(object sender, EventArgs e)
         {
             if (textBoxUsername.Text == "Username")
                 textBoxUsername.Text = "";
         }
 
-        private void passwordTextBox_Click(object sender, EventArgs e)
+        public void passwordTextBox_Click(object sender, EventArgs e)
         {
             if (textBoxPassword.Text == "Password")
                 textBoxPassword.Text = "";
         }
 
-        private void emailTextBox_Click(object sender, EventArgs e)
-        {
-            if (textBoxEmail.Text == "E-mail adress")
-                textBoxEmail.Text = "";
-        }
 
-        private void confirmButton_Click(object sender, EventArgs e)
+        public void confirmButton_Click(object sender, EventArgs e)
         {
             if (this.textBoxUsername.Text != "" && this.textBoxPassword.Text != "" &&
                 this.textBoxEmail.Text != "" && this.textBoxFirstName.Text != "" &&
@@ -72,56 +69,58 @@ namespace FullPaintProject
 
                             }
                             clearTextBoxes();
+                            setCheckForTests("inserted");
                         }
                         catch (Exception ex)
                         {
                             MessageBox.Show("Error! " + ex);
+                            setCheckForTests("error reader");
                         }
                     }
                     else {
                         
                         MessageBox.Show("Username already exists!");
+                        setCheckForTests("Username already exists!");
                     }
                     
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error! " + ex);
+                    setCheckForTests("error2");
                 }
                 
             }
             else
             {
                 MessageBox.Show("Incorrect information");
+                setCheckForTests("Incorrect information");
             }
             
 
         }
-        void clearTextBoxes()
+        public void clearTextBoxes()
         {
             textBoxPassword.Text = textBoxUsername.Text = textBoxFirstName.Text = textBoxLastName.Text = textBoxEmail.Text = "";
         }
 
-        private void textBoxFirstName_TextChanged(object sender, EventArgs e)
-        {
-            if (textBoxFirstName.Text == "First Name")
-                textBoxFirstName.Text = "";
-        }
 
-        private void textBoxLastName_TextChanged(object sender, EventArgs e)
-        {
-            if (textBoxLastName.Text == "Last Name")
-                textBoxLastName.Text = "";
-        }
-
-        private void goBackButton_Click(object sender, EventArgs e)
+        public void goBackButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
             this.Close();
         }
+        public string getCheckForTests()
+        {
+            return checkString;
+        }
+        public void setCheckForTests(string variable)
+        {
+            checkString = variable;
+        }
 
-  
+
     }
 }

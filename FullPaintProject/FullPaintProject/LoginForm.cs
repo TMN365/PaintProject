@@ -13,25 +13,26 @@ namespace FullPaintProject
 {
     public partial class LoginForm : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Faculta\UTCN\An3Sem2\II\PaintProject22.05\PaintProject\FullPaintProject\FullPaintProject\PaintDataBase.mdf;Integrated Security=True";
+        bool check = false;
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\PaintDataBase.mdf';Integrated Security=True";
         public LoginForm()
         {
             
             InitializeComponent();
         }
-        private void usernameTextBox_Click(object sender, EventArgs e)
+        public void usernameTextBox_Click(object sender, EventArgs e)
         {
             if (textBoxUsername.Text == "Username")
                 textBoxUsername.Text = "";
         }
 
-        private void passwordTextBox_Click(object sender, EventArgs e)
+        public void passwordTextBox_Click(object sender, EventArgs e)
         {
             if (textBoxPassword.Text == "Password")
                 textBoxPassword.Text = "";
         }
 
-        private void registerButton_Click(object sender, EventArgs e)
+        public void registerButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             RegisterForm registerForm = new RegisterForm();
@@ -39,7 +40,7 @@ namespace FullPaintProject
             this.Close();
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        public void loginButton_Click(object sender, EventArgs e)
         {
 
             using (SqlConnection sqlCon = new SqlConnection(connectionString))
@@ -53,17 +54,27 @@ namespace FullPaintProject
                     MainMenuForm mainMenuForm = new MainMenuForm(textBoxUsername.Text, textBoxPassword.Text);
                     mainMenuForm.ShowDialog();
                     this.Close();
+                    setCheckForTests(true);
                 }
                 else
                 {
-                    MessageBox.Show("The username and the password are incorrect.");
+                    MessageBox.Show("The username and/or the password are incorrect.");
+                    setCheckForTests(false);
                 }
             }
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        public void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public bool getCheckForTests()
+        {
+            return check;
+        }
+        public void setCheckForTests(bool variable)
+        {
+            check = variable;
         }
     }
 }

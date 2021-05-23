@@ -71,7 +71,6 @@ namespace FullPaintProject
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(240, 22);
             this.textBoxEmail.TabIndex = 2;
-            this.textBoxEmail.Click += new System.EventHandler(this.emailTextBox_Click);
             // 
             // confirmButton
             // 
@@ -91,7 +90,6 @@ namespace FullPaintProject
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(240, 22);
             this.textBoxFirstName.TabIndex = 4;
-            this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBoxFirstName_TextChanged);
             // 
             // textBoxLastName
             // 
@@ -100,7 +98,6 @@ namespace FullPaintProject
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(240, 22);
             this.textBoxLastName.TabIndex = 5;
-            this.textBoxLastName.TextChanged += new System.EventHandler(this.textBoxLastName_TextChanged);
             // 
             // goBackButton
             // 
@@ -186,17 +183,17 @@ namespace FullPaintProject
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxUsername;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.Button confirmButton;
-        private System.Windows.Forms.TextBox textBoxFirstName;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.Button goBackButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox textBoxUsername;
+        public System.Windows.Forms.TextBox textBoxPassword;
+        public System.Windows.Forms.TextBox textBoxEmail;
+        public System.Windows.Forms.Button confirmButton;
+        public System.Windows.Forms.TextBox textBoxFirstName;
+        public System.Windows.Forms.TextBox textBoxLastName;
+        public System.Windows.Forms.Button goBackButton;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
     }
 }

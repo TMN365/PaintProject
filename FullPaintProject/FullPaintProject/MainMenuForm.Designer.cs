@@ -108,10 +108,10 @@ namespace FullPaintProject
 
         #endregion
 
-        private System.Windows.Forms.Button newButton;
-        private System.Windows.Forms.Button logoutButton;
-        private System.Windows.Forms.Button editDataButton;
-        private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.ListBox picturesListBox;
+        public System.Windows.Forms.Button newButton;
+        public System.Windows.Forms.Button logoutButton;
+        public System.Windows.Forms.Button editDataButton;
+        public System.Windows.Forms.PictureBox pictureBox;
+        public System.Windows.Forms.ListBox picturesListBox;
     }
 }
