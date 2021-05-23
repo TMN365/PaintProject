@@ -13,7 +13,7 @@ namespace FullPaintProject
 {
     public partial class RegisterForm : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\Database1.mdf';Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Faculta\UTCN\An3Sem2\II\PaintProject22.05\PaintProject\FullPaintProject\FullPaintProject\PaintDataBase.mdf;Integrated Security=True";
         public RegisterForm()
         {
             InitializeComponent();
@@ -39,25 +39,65 @@ namespace FullPaintProject
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
-            // aici verificam datele daca sunt valide si deschidem form pentru codul primit prin mail
-            using (SqlConnection sqlCon = new SqlConnection(connectionString))
+            if (this.textBoxUsername.Text != "" && this.textBoxPassword.Text != "" &&
+                this.textBoxEmail.Text != "" && this.textBoxFirstName.Text != "" &&
+                this.textBoxLastName.Text != "")
             {
-                sqlCon.Open();
-                SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon);
-                //AICI TREBUIE SA NE PUNEM UN IF CARE SA NE VERIFICE DACA USERNAME-UL SI/SAU EMAIL-UL EXISTA DEJA IN BAZA DE DATE
-                sqlCmd.CommandType = CommandType.StoredProcedure;
-                sqlCmd.Parameters.AddWithValue("@FirstName", textBoxFirstName.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@LastName", textBoxLastName.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@Email", textBoxEmail.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@Username", textBoxUsername.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@Password", textBoxPassword.Text.Trim());
-                sqlCmd.ExecuteNonQuery();
-                MessageBox.Show("Registration is successful");
-                clearTextBoxs();
+                string selectQuery = "Select * from AccountTable where Username= '" + this.textBoxUsername.Text.Trim()+"' ";
+                SqlConnection sqlCon = new SqlConnection(connectionString);
+                SqlDataReader sqlDataReader;
+                SqlCommand sqlCheckAvailCommand = new SqlCommand(selectQuery, sqlCon);
+
+                string insertQuery = "INSERT into AccountTable(Username,Password,Email,FirstName,LastName) values('"
+                            + this.textBoxUsername.Text + "','" + this.textBoxPassword.Text + "','" +
+                            this.textBoxEmail.Text + "','" + this.textBoxFirstName.Text
+                            + "','" + this.textBoxLastName.Text + "') ;";
+ 
+                SqlCommand sqlInsertCommand = new SqlCommand(insertQuery, sqlCon);
+
+                try
+                {
+                    sqlCon.Open();
+                    sqlDataReader = sqlCheckAvailCommand.ExecuteReader();
+                    if (sqlDataReader.Read() == false)
+                    {
+                        try
+                        {
+                            sqlDataReader.Close();
+                            //sqlCon.Open();
+                            sqlDataReader = sqlInsertCommand.ExecuteReader();
+                            MessageBox.Show("Inserted !");
+                            while (sqlDataReader.Read())
+                            {
+
+                            }
+                            clearTextBoxes();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error! " + ex);
+                        }
+                    }
+                    else {
+                        
+                        MessageBox.Show("Username already exists!");
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error! " + ex);
+                }
+                
             }
+            else
+            {
+                MessageBox.Show("Incorrect information");
+            }
+            
 
         }
-        void clearTextBoxs()
+        void clearTextBoxes()
         {
             textBoxPassword.Text = textBoxUsername.Text = textBoxFirstName.Text = textBoxLastName.Text = textBoxEmail.Text = "";
         }
@@ -73,5 +113,15 @@ namespace FullPaintProject
             if (textBoxLastName.Text == "Last Name")
                 textBoxLastName.Text = "";
         }
+
+        private void goBackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+            this.Close();
+        }
+
+  
     }
 }

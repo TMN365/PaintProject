@@ -13,9 +13,10 @@ namespace FullPaintProject
 {
     public partial class LoginForm : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\Database1.mdf';Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Faculta\UTCN\An3Sem2\II\PaintProject22.05\PaintProject\FullPaintProject\FullPaintProject\PaintDataBase.mdf;Integrated Security=True";
         public LoginForm()
         {
+            
             InitializeComponent();
         }
         private void usernameTextBox_Click(object sender, EventArgs e)
@@ -40,59 +41,6 @@ namespace FullPaintProject
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            /* using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-             {
-
-                 sqlConnection.Open();
-                 SqlCommand sqlCommand = new SqlCommand("GetPasswordFromUsername"/*Queryul meu, sqlConnection);
-
-                 {
-                     sqlCommand.CommandType = CommandType.StoredProcedure;
-                     sqlCommand.Parameters.AddWithValue("@Username", usernameTextBox.Text.Trim()); // Ia valoarea din text box si o baga in query
-                     sqlCommand.ExecuteNonQuery();
-                 }// aici am facut un query
-
-                 using (SqlDataReader reader = sqlCommand.ExecuteReader())
-                 {
-                     if (reader.Read()) // de-an pulea readerul
-                     {
-                         while (reader.Read())
-                         {
-                             string findCours = reader["Username"].ToString();
-                             /*
-                              * si salvez mail + password
-                              * Creare obiect cu toate campurile
-
-
-                         }
-                     }
-                     /*else//Nu mai stiu ce era aici
-                     {
-                         List<Note> note = new List<Note>();
-                         int controlNumber = this.loggedStudent.CurentYear * 10 + this.loggedStudent.CurentSemester;
-                         if (controlNumber >= 11)
-                             note.AddRange(getY1S1Notes());
-                         if (controlNumber >= 12)
-                             note.AddRange(getY1S2Notes());
-                         if (controlNumber >= 21)
-                             note.AddRange(getY2S1Notes());
-                         if (controlNumber >= 22)
-                             note.AddRange(getY2S2Notes());
-                         if (controlNumber >= 31)
-                             note.AddRange(getY3S1Notes());
-                         if (controlNumber >= 32)
-                             note.AddRange(getY3S2Notes());
-                         if (controlNumber >= 41)
-                             note.AddRange(getY4S1Notes());
-                         if (controlNumber >= 42)
-                             note.AddRange(getY4S2Notes());
-                         for (int i = 0; i <= note.Count - 1; i++)
-                             note.ElementAt(i).setNote(-1);
-                         this.LoggedStudent.Notes = note;
-                     }
-
-                 }
-             }*/
 
             using (SqlConnection sqlCon = new SqlConnection(connectionString))
             {
@@ -102,15 +50,20 @@ namespace FullPaintProject
                 if (dataTable.Rows[0][0].ToString() == "1")
                 {
                     this.Hide();
-                    MainMenuForm mainMenuForm = new MainMenuForm();
+                    MainMenuForm mainMenuForm = new MainMenuForm(textBoxUsername.Text, textBoxPassword.Text);
                     mainMenuForm.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Baga password si username corect");
+                    MessageBox.Show("The username and the password are incorrect.");
                 }
             }
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
