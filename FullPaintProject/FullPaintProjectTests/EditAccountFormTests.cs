@@ -15,8 +15,13 @@ namespace FullPaintProject.Tests
         public void clearTextboxTest()
         {
             bool result = false;
-            EditAccountForm editAccountForm = new EditAccountForm();
-            editAccountForm.passTextBox.Text = editAccountForm.changeMailTextBox.Text = editAccountForm.firstNameTextBox.Text = editAccountForm.lastNameTextBox.Text = editAccountForm.oldPasswordTextBox.Text = editAccountForm.confPassTextBox.Text = "2";
+            EditAccountForm editAccountForm = new EditAccountForm("1","1");
+            editAccountForm.passTextBox.Text = "text";
+            editAccountForm.changeMailTextBox.Text = "text";
+            editAccountForm.firstNameTextBox.Text = "text";
+            editAccountForm.lastNameTextBox.Text = "text";
+            editAccountForm.oldPasswordTextBox.Text = "text";
+            editAccountForm.confPassTextBox.Text = "2";
             editAccountForm.clearTextbox();
             if (editAccountForm.passTextBox.Text == "" &&
                 editAccountForm.changeMailTextBox.Text == "" &&

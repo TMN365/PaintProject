@@ -21,3 +21,26 @@ C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\F
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.csproj.CopyComplete
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.dll
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.pdb
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\bin\Debug\Database1.mdf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\bin\Debug\Database1_log.ldf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Database1.mdf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Database1_log.ldf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\PaintDataBase.mdf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\PaintDataBase_log.ldf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\FullPaintProjectTests.dll
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\FullPaintProjectTests.pdb
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\FullPaintProject.exe
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\FullPaintProject.pdb
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\FullPaintProject.exe.config
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.csproj.CopyComplete
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.dll
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProjectTests\obj\Debug\FullPaintProjectTests.pdb

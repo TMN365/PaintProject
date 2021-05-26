@@ -60,7 +60,7 @@ namespace FullPaintProject
         private string idReturn()
         {
             string id = "";
-            string selectQuery = "Select * from AccountTable where Username= '" + username + "' AND Password = '" + password + "' ";
+            string selectQuery = "Select * from AccountTable where Username= '" + username + "' ";
             SqlConnection sqlCon = new SqlConnection(connectionString);
             SqlCommand sqlIdCommand = new SqlCommand(selectQuery, sqlCon);
 

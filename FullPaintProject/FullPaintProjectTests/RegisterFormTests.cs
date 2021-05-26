@@ -11,6 +11,7 @@ namespace FullPaintProject.Tests
     [TestClass()]
     public class RegisterFormTests
     {
+        int iteratie =4;
         [TestMethod()]
         public void clearTextBoxesTest()
         {
@@ -78,7 +79,8 @@ namespace FullPaintProject.Tests
             bool result = false;
             string checkString;
             RegisterForm registerForm = new RegisterForm();
-            registerForm.textBoxPassword.Text = registerForm.textBoxUsername.Text = registerForm.textBoxFirstName.Text = registerForm.textBoxLastName.Text = registerForm.textBoxEmail.Text = "test1";
+            registerForm.textBoxPassword.Text = registerForm.textBoxUsername.Text = registerForm.textBoxFirstName.Text = registerForm.textBoxLastName.Text = registerForm.textBoxEmail.Text = "test"+ iteratie.ToString();
+            iteratie++;
             registerForm.confirmButton_Click(new object(), new EventArgs());
 
             if (registerForm.getCheckForTests() == "inserted") result = true;
