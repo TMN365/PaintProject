@@ -30,7 +30,7 @@ namespace FullPaintProject
 
         public void confirmButton_Click(object sender, EventArgs e)
         {
-            SqlConnection myCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\PaintDataBase.mdf';Integrated Security=True");
+            SqlConnection myCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\PaintDataBase.mdf';Integrated Security=True");
             if (passTextBox.Text == confPassTextBox.Text && passTextBox.Text != "" && changeMailTextBox.Text != "" && lastNameTextBox.Text != "" &&
                 firstNameTextBox.Text != "" && oldPasswordTextBox.Text != "" && oldPasswordTextBox.Text == password)
             {
@@ -57,7 +57,7 @@ namespace FullPaintProject
         public void goBackButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MainMenuForm mainMenuForm = new MainMenuForm(username, password);
+            MainMenuForm mainMenuForm = new MainMenuForm(username, confPassTextBox.Text);
             mainMenuForm.ShowDialog();
             this.Close();
         }

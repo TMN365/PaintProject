@@ -98,3 +98,6 @@ C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\F
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\bin\Debug\PaintDataBase.mdf
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\bin\Debug\PaintDataBase_log.ldf
 C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.EditAccountForm.resources
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\bin\Debug\PaintDataBase.mdf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\bin\Debug\PaintDataBase_log.ldf
+C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\obj\Debug\FullPaintProject.EditAccountForm.resources

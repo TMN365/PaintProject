@@ -15,7 +15,7 @@ namespace FullPaintProject
 {
     public partial class Form1 : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Olariu Gabriel\Dropbox\Facultate\AN3\Sem2\II\Proiect\FullPaintProject\FullPaintProject\PaintDataBase.mdf';Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Alex\Desktop\An3Sem2\II\PaintProject\FullPaintProject\FullPaintProject\PaintDataBase.mdf';Integrated Security=True";
         string username, password;
         string id;
         int x = -1;
@@ -99,9 +99,9 @@ namespace FullPaintProject
             {
                 MessageBox.Show("Error! " + e);
             }
-            Bitmap bitmap = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Bitmap bitmap = new Bitmap(this.Size.Width, this.Size.Height-Menu.Size.Height);
             Graphics graphics = Graphics.FromImage(bitmap as Image);
-            graphics.CopyFromScreen(0, 144, 0, 0, new Size(this.Width+215, this.Height-11));
+            graphics.CopyFromScreen(0, 115, 0, 0, new Size(this.Size.Width, this.Size.Height - Menu.Size.Height));
             string fileName = "\\" + id + "_" + Guid.NewGuid() + ".jpg";
             string path = System.Environment.CurrentDirectory;      path = Path.GetDirectoryName(path);     path = Path.GetDirectoryName(path);
             //MessageBox.Show(path);
